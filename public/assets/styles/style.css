@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&family=Righteous&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    background-color: #FAFAFA;
+    margin: 54px 0 0;
+    font-family: 'Roboto', sans-serif;
+    color: #262626;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+.content {
+    background-color: #FB6B6B;
+    margin: 0 auto; 
+    width: 375px;
+    height: 667px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid #DBDBDB;
+
+  }
+
+.content img {
+    margin: 0 auto;
+    margin-top: 148px;
+    width: 136px;
+    height: 161px;
+  }
+
+.content h1 {
+    margin-top: 13px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+  }
+
+.button {
+    margin-top: 80px;
+    margin: 0 auto;
+    width: 246px;
+    height: 54px;
+    background-color: #FFFFFF;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.button p {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    color: #D70900;
+}
