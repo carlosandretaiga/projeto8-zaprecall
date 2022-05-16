@@ -14,6 +14,8 @@ body {
   }
 
 .content {
+    top: 0;
+    position: fixed;
     background-color: #FB6B6B;
     margin: 0 auto; 
     width: 375px;
@@ -25,7 +27,7 @@ body {
 
   }
 
-.content img {
+.content-img {
     margin: 0 auto;
     margin-top: 148px;
     width: 136px;
@@ -67,4 +69,9 @@ body {
     /* identical to box height */
     text-align: center;
     color: #D70900;
+}
+
+.button:hover {
+  filter: brightness(1.75); 
+  cursor: pointer; 
 }
