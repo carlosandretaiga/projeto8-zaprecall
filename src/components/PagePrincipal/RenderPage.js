@@ -8,7 +8,14 @@ import check from "../../assets/images/checkmark-circle.svg"
 
 export default function Render(props) {
 
-    const {dataQuestions, index, redAct, setPoints} = props 
+    const {dataQuestions, index, redAct, setPoints} = props;
+
+    const images = [{class: "play", src:play, alt:"play"},
+    {class: "close", src:close, alt:"close"},
+    {class: "help", src:help, alt: "help"}, 
+    {class: "check", src:check, alt: "check"},
+    {class: "turn", src:turn, alt: "turn"}
+]; 
 
     const [actQuestion, setActQuestion] = React.useState(-1); 
 
@@ -19,13 +26,6 @@ export default function Render(props) {
 
     const [rate, setRate] = React.useState("");
 
-
-    const images = [{class: "play", src:play, alt:"play"},
-    {class: "close", src:close, alt:"close"},
-    {class: "help", src:help, alt: "help"}, 
-    {class: "check", src:check, alt: "check"},
-    {class: "turn", src:turn, alt: "turn"}
-]; 
 
     const contentPage = answare ? dataQuestions.answare : dataQuestions.question; 
 
@@ -53,7 +53,7 @@ export default function Render(props) {
 
             </div>
         ) : (
-           <img className={images[3].class} src={images[3].src} alt={images[3].alt} />
+           <img className={images[4].class} src={images[4].src} alt={images[4].alt} />
         )}
         </article>
     ) : (

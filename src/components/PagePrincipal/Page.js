@@ -1,6 +1,6 @@
 import { dataQuestions } from "../../data/dataQuestions";
 
-import Render from "./Render";
+import RenderPage from "./RenderPage";
 
 export default function Page(props) {
 
@@ -11,7 +11,7 @@ export default function Page(props) {
         <main>
             {
                 dataQuestions.sort().map((dataQuestions, index) => 
-                <Render key={index} dataQuestions={dataQuestions} index={index} redAct={redAct} setPoints={setPoints}/>)
+                <RenderPage key={index} dataQuestions={dataQuestions} index={index} redAct={redAct} setPoints={setPoints}/>)
 
             }
         </main>
