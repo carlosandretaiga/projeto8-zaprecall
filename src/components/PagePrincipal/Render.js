@@ -8,13 +8,6 @@ import check from "../../assets/images/checkmark-circle.svg"
 
 export default function Render(props) {
 
-    const images = [{class: "play", src:play, alt:"play"},
-    {class: "close", src:close, alt:"close"},
-    {class: "help", src:help, alt: "help"}, 
-    {class: "check", src:check, alt: "check"},
-    {class: "turn", src:turn, alt: "turn"}
-]; 
-
     const {dataQuestions, index, redAct, setPoints} = props 
 
     const [actQuestion, setActQuestion] = React.useState(-1); 
@@ -25,6 +18,14 @@ export default function Render(props) {
     const [click, setClick] = React.useState(true); 
 
     const [rate, setRate] = React.useState("");
+
+
+    const images = [{class: "play", src:play, alt:"play"},
+    {class: "close", src:close, alt:"close"},
+    {class: "help", src:help, alt: "help"}, 
+    {class: "check", src:check, alt: "check"},
+    {class: "turn", src:turn, alt: "turn"}
+]; 
 
     const contentPage = answare ? dataQuestions.answare : dataQuestions.question; 
 
@@ -46,7 +47,7 @@ export default function Render(props) {
                     <h2>Quase não lembrei</h2>
                 </div>
 
-                <div className="remember" onClick={() => setRate("green")-setIcon(4)-redAct(2)-setClick(false)}>
+                <div className="remember" onClick={() => setRate("green")-setIcon(3)-redAct(2)-setClick(false)}>
                     <h2>Zap!</h2>
                 </div>
 
@@ -56,11 +57,10 @@ export default function Render(props) {
         )}
         </article>
     ) : (
-
         <article
         key={index}
         className="init-question"
-        onClick={click ? (() => setActQuestion(index) - setAnsware(false)):() => setClick(false)}> 
+        onClick={click?(() => setActQuestion(index) - setAnsware(false)):() => setClick(false)}> 
         <h2 className= {rate}> Pergunta {index + 1}</h2>
         <img className={images[icon].class} src={images[icon].src} alt={images[icon].alt} />
         </article>

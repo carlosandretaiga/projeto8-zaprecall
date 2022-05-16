@@ -16,10 +16,6 @@ body,
   -ms-overflow-style: none;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 
 .content {
     width: 100%;
@@ -29,7 +25,6 @@ body::-webkit-scrollbar {
     left: 0;
     z-index: 1;
     background-color: #FB6B6B;
-    margin: 0 auto; 
     width: 375px;
     height: 667px;
     display: flex;
@@ -38,12 +33,6 @@ body::-webkit-scrollbar {
     align-items: center;
   }
 
-.content-img {
-    margin: 0 auto;
-    margin-top: 148px;
-    width: 136px;
-    height: 161px;
-  }
 
 .content h1 {
     display: flex;
@@ -52,7 +41,7 @@ body::-webkit-scrollbar {
     font-family: 'Righteous';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 36px;
     line-height: 35px;
     letter-spacing: -0.012em;
     color: #FFFFFF;
@@ -86,7 +75,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 140px;
+  height: 150px;
 }
 
 header h1 {
@@ -118,7 +107,7 @@ main {
 
 .init-question, 
 .question {
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   padding: 25px;
@@ -135,8 +124,8 @@ main {
 
 .question {
   position: relative; 
-  width: 295px;
-  min-height: 132px;
+  width: 299px;
+  min-height: 131px;
 }
 
 .init-question h2, 
@@ -157,7 +146,7 @@ main {
   position: absolute; 
   bottom: 20px;
   right: 20px;
-  width: 35px;
+  width: 30px;
   height: 20px;
 }
 
@@ -228,7 +217,7 @@ main {
   position: absolute;
   bottom: 5px;
   width: 100%;
-  height: 40px;
+  height: 38px;
   right: 0;
 }
 
@@ -310,15 +299,15 @@ main {
   text-align: center;
   background-color: #fb6b6b;
   border-radius: 5px;
-  width: 167px;
-  height: 32px;
+  width: 246px;
+  height: 54px;
 }
 
 .button h2 {
   font-family: "Recursive";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 17px;
   color: #ffffff;
 }
@@ -345,5 +334,10 @@ main {
   font-size: 18px;
   line-height: 22px;
   color: #333333;
+}
+
+.logo {
+  width: 136px;
+  height: 161px;
 }
 
